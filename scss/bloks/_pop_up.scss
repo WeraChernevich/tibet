@@ -1,0 +1,76 @@
+.pop_up {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 3;
+    
+}
+
+.pop_up.active {
+    display: block;
+}
+
+.pop_up_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: $dark-secondary;
+
+}
+
+.pop_up_body {
+    position: relative;
+    margin: auto;
+    padding: 100px 15px 110px 15px;
+    width: 500px;
+    background-color: $yellow;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pop_up_body p {
+    margin-bottom: 40px;
+    color: $dark-secondary;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.pop_up_body input {
+    display: block;
+    margin: 25px auto 0px auto;
+    padding: 17px 20px;
+    width: 330px;
+    background-color: $beige;
+    border-radius: 10px;
+}
+
+.pop_up_body button {
+    cursor: pointer;
+    display: block;
+    width: 330px;
+    margin: 60px auto 0px auto;
+    padding: 20px 0px;
+    border: none;
+    border-radius: 10px;
+    background-color: $dark-secondary;
+    color: $beige;
+    font-family: $font-main;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+   
+}
+
+.pop_up_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 21px;
+    cursor: pointer;
+}

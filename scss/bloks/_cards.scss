@@ -1,0 +1,118 @@
+.cards {
+    padding: 80px 370px 180px 370px;
+    width: 1920px;
+    background-color: $beige;
+    color: $dark-secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.cards__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.cards__title p {
+    color: $yellow;
+}
+
+.cards__title h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.cards__img {}
+
+.slideshow-container {
+    max-width: 1180px;
+    position: relative;
+    margin: auto;
+}
+
+.cards__prev,
+.cards__next {
+    cursor: pointer;
+    position: absolute;
+    top: calc(90% + 985px);
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    transition: .5s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: $dark-secondary;
+
+}
+
+.cards__prev {
+    color: $yellow;
+    left: 300px;
+}
+
+.cards__next {
+    color: $yellow;
+    right: -600px;
+    border-radius: 3px 0 0 3px;
+}
+
+.cards__prev:hover,
+.cards__next:hover {
+    background-color: $dark-secondary;
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: $yellow;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color;
+}
+
+.active,
+.dot:hover {
+    background-color: red;
+
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+
+@-webkit-keyframes fade {
+    from {
+        opasity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opasity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+.cards__btn {
+    display: block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    background: #1A3E3E;
+    color: $white;
+}
