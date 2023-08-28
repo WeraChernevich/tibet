@@ -7,6 +7,10 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
+
+    @media screen and (max-width: $mobile) {
+        display: none;
+    }
 }
 
 .cards__title {
@@ -37,7 +41,7 @@
 .cards__next {
     cursor: pointer;
     position: absolute;
-    top: calc(90% + 985px);
+    top: calc(50% + 985px);
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -54,7 +58,7 @@
 
 .cards__next {
     color: $yellow;
-    right: -600px;
+    right: 300px;
     border-radius: 3px 0 0 3px;
 }
 
